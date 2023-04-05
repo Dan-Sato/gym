@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --textFont: "Poppins", sans-serif;
+  --textColor: lightgray;
+
+  --gymColor00: gray;
+  --gymColor01: darkgray;
+
+  --bgImg: url(../img/bg.jpg);
+  --logoImg: url(../img/logo.png);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--textColor);
+  font-family: var(--textFont);
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.bgImg {
+  display: block;
+  background: var(--bgImg);
+  background-size: cover;
+  background-position: bottom center;
+
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+}
+.bgImg img {
+}
+#loginSection {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  height: fit-content;
+  border-radius: 15px;
+
+  padding: 10px;
+
+  /* filter: none;
+  -webkit-filter: none; */
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+#loginSection > #img {
+  /*////logo////*/
+  height: 200px;
+  display: block;
+  margin: 10px;
+  background: var(--logoImg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  border-radius: 15px 15px 0px 0px;
+}
+form .textBox {
+  display: block;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+form > input[type="submit"] {
+  display: block;
+  margin-top: 15px;
+  width: 100%;
+  height: 40px;
+  background-color: gray;
+  border-radius: 5px;
+  font-size: large;
+}
